@@ -16,22 +16,12 @@
 
 package com.grafxteam.sr.main;
 
-import org.lwjgl.opengl.Display;
-
-public class MainClass {
-
-	public static void main(String[] args) {
-
-		MainDisplayClass.createDisplay();
-		
-		while (!Display.isCloseRequested()) {
-
-			Display.update();
-			
-		}
-		
-		MainDisplayClass.closeDisplay();
-
-	}
-
+public class DisplayParams {
+	
+	public static int WIDTH = 800;
+	public static int HEIGHT = 600;
+	public static String TITLE = "SR ";
+	public static String VER = "v0.0.l";
+	public static int FPS_CAP = 60; 
+	
 }
